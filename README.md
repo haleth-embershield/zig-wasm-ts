@@ -69,8 +69,8 @@ project-root/
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/zig-ts-wasm-template.git
-cd zig-ts-wasm-template
+git clone https://github.com/haleth-embershield/zig-wasm-ts.git
+cd zig-wasm-ts
 ```
 
 2. Install dependencies:
@@ -152,7 +152,3 @@ A stretch goal for this template is to incorporate WebGPU for hardware-accelerat
 ## Contributing
 
 Contributions to improve this template are welcome! Please feel free to submit issues or pull requests.
-
-## License
-
-MIT
