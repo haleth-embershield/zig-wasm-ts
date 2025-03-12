@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Neon Geometry Tower Defense</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Neon Geometry Tower Defense</h1>
+        
+        <div class="canvas-container">
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </div>
+        
+        <div class="controls">
+            <button id="start-button">Start Game</button>
+            <button id="pause-button">Pause</button>
+        </div>
+        
+        <div class="tower-selection">
+            <h3>Select Tower</h3>
+            <div class="tower-buttons">
+                <button id="tower-line" class="tower-button active">Line ($50)</button>
+                <button id="tower-triangle" class="tower-button">Triangle ($100)</button>
+                <button id="tower-square" class="tower-button">Square ($75)</button>
+                <button id="tower-pentagon" class="tower-button">Pentagon ($150)</button>
+            </div>
+        </div>
+        
+        <div class="status">
+            <p id="status">WASM module loading...</p>
+        </div>
+        
+        <div class="game-stats">
+            <span id="money">$100</span>
+            <span id="score">Score: 0</span>
+            <span id="wave">Wave: 1</span>
+        </div>
+        
+        <div class="controls-info">
+            <h3>Controls</h3>
+            <ul>
+                <li>Desktop: 1-4 keys to select towers; ESC to deselect; Space to pause</li>
+                <li>Mobile: Tap tower buttons to select; Tap canvas to place towers</li>
+            </ul>
+        </div>
+        
+        <div class="log-toggle" id="log-toggle">
+            <span>Console Output</span>
+            <span class="log-toggle-icon">▼</span>
+        </div>
+        
+        <div class="log-container" id="log-container">
+            <div class="log-entry">Console output will appear here...</div>
+        </div>
+        
+        <div id="message" class="message"></div>
+        
+        <div id="game-over" class="game-over">
+            <h2 id="game-over-title">Game Over</h2>
+            <p id="game-over-score">Final Score: 0</p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "../dist/js",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "declaration": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "typeRoots": [
+      "./types",
+      "../node_modules/@types"
+    ],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts", 
+    "types/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules", 
+    "../dist"
+  ]
+} 
